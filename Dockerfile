@@ -18,6 +18,3 @@ COPY jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
 #RUN cd /root
 #CMD ["jupyter", "notebook", "--generate-config"]
 CMD ["jupyter", "lab",  "--ip=*", "--port=8888", "--no-browser", "--notebook-dir=/home/notebooks",  "--allow-root"]
-
-# Run container
-# docker run --rm -it -p 8888:8888 data-science
